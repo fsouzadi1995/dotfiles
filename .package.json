@@ -1,16 +1,5 @@
-{
-  "husky": {
+"husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm run format:check"
+      "pre-commit": "pretty-quick --staged && npm run lint --fix",
+      "pre-push": "npm run test && npm run build --aot"
     }
-  },
-  "lint-staged": {
-    "*.{js,json,scss,less,md,ts,html,graphql}": [
-      "npm run format"
-    ],
-    "nx.json": [
-      "nx format:write"
-    ]
-  },
-}
