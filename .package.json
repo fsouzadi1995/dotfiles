@@ -1,5 +1,0 @@
-"husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged && npm run lint --fix",
-      "pre-push": "npm run test && npm run build"
-    }

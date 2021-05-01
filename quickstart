@@ -1,0 +1,1 @@
+npm i --save-dev eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-react-hooks prettier eslint-config-prettier eslint-plugin-prettier
