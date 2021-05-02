@@ -6,6 +6,7 @@ module.exports = {
   parserOptions: {
     project: './tsconfig.json',
     tsconfigRootDir: __dirname,
+    extraFileExtensions: ['.scss', '.html'],
   },
   settings: {
     react: {
@@ -14,14 +15,7 @@ module.exports = {
   },
   rules: {
     'no-console': 'warn',
-    'no-unused-vars': [
-      'warn',
-      {
-        args: 'after-used',
-        ignoreRestSiblings: false,
-        argsIgnorePattern: '^_$',
-      },
-    ],
+    'no-unused-vars': ['warn'],
     'import/order': ['warn', { 'newlines-between': 'always' }],
     'react/self-closing-comp': 'warn',
     'react-hooks/rules-of-hooks': 'warn',
