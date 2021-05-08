@@ -6,7 +6,7 @@ module.exports = {
   parserOptions: {
     project: './tsconfig.json',
     tsconfigRootDir: __dirname,
-    extraFileExtensions: ['.scss', '.html'],
+    extraFileExtensions: [],
   },
   settings: {
     react: {
@@ -14,6 +14,7 @@ module.exports = {
     },
   },
   rules: {
+    '@typescript-eslint/explicit-function-return-type': 'warn',
     'no-console': 'warn',
     'no-unused-vars': ['warn'],
     'import/order': ['warn', { 'newlines-between': 'always' }],
